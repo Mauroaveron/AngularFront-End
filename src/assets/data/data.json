@@ -1,0 +1,70 @@
+{
+    "name": "Mauro Adrián Verón",
+    "backImage": "https://www.wallpaperbetter.com/wallpaper/513/91/777/cool-technology-code-1080P-wallpaper.jpg",
+    "image": "https://media-exp1.licdn.com/dms/image/C4E03AQHhcCF8-bKQ9w/profile-displayphoto-shrink_200_200/0/1603187002043?e=1651104000&v=beta&t=TKbvjnLZ7PC-t3igTWuZxgXGyHi-jtbFo-YupyrAA5Q",
+    "position": "Estudiante de Licenciatura en Informática",
+    "university": {
+        "name": "Universidad Nacional de Quilmes",
+        "img": "https://ddhh.unq.edu.ar/wp-content/uploads/2017/04/Logo-UNQ-RGB.png",
+        "url": "http://www.unq.edu.ar/"
+    },
+    "ubication": "Bosques, Buenos Aires, Argentina",
+    "about": "Estudiante de Licenciatura en Informática, entusiasmado por iniciar una carrera laboral como desarrollador.",
+    "experience": [{
+        "position": "Auxiliar de contact center",
+        "company": "Aerolíneas Argentinas",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Aerol%C3%ADneas_Argentinas_Logo_2010.svg/1280px-Aerol%C3%ADneas_Argentinas_Logo_2010.svg.png",
+        "start": "septiembre 2015",
+        "end": "julio 2019",
+        "timeElapsed": "3 años y 10 meses"
+    }],
+    "education": [{
+        "university": "Universidad Nacional de Quilmes",
+        "career": "Licenciatura en Informática",
+        "img": "https://ddhh.unq.edu.ar/wp-content/uploads/2017/04/Logo-UNQ-RGB.png",
+        "start":"2020",
+        "end": "En curso"
+    },
+    {
+        "university": "Universidad Nacional Arturo Jauretche",
+        "career": "Ingeniería en Informática",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Unaj.jpg/245px-Unaj.jpg",
+        "start":"2015",
+        "end": "2017"
+    },
+    {
+        "university": "Universidad Nacional de La Plata",
+        "career": "Traductorado en Inglés",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png",
+        "start":"2013",
+        "end": "2014"
+    }],
+    "skills": [{
+        "name": "Compromiso",
+        "progress": "100"
+    },
+    {
+        "name": "Flexibilidad",
+        "progress": "65"
+    },
+    {
+        "name": "Trabajo en equipo",
+        "progress": "80"
+    },
+    {
+        "name": "HTML & CSS",
+        "progress": "60"
+    },
+    {
+        "name": "Javascript",
+        "progress": "35"
+    },
+    {
+        "name": "TypeScript",
+        "progress": "30"
+    }],
+    "proyects": [{
+        "name": "Portfolio web",
+        "description": "Portafolio web impulsado por el programa Argentina Programa, utilizando tecnologías como HTML, CSS, Bootstrap, Typescript y Angular."
+    }]    
+}

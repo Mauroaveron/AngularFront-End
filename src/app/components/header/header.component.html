@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="card mat-card" id="first-card">
+        <div id="profile-background"><img [src]="miPortfolio.backImage" alt="..." width="1000" height="700"></div>
+        <div id="info" style="padding: 16px">
+            <div id="info-img">
+                <img class="profile-image" [src]="miPortfolio.image">
+                <div class="btn-edit"><a href="#" class="btn-prfl-right"><i class="fa-solid fa-pen"></i></a></div>
+            </div>
+        <div id="info-data">
+            <div>
+                <h1>{{miPortfolio.name}}</h1>
+                <div id="info-company">{{miPortfolio.position}} en {{miPortfolio.university.name}}</div>
+                <div id="info-contact">
+                    <span style="padding-right: 10px">{{miPortfolio.ubication}}</span>
+                    <span><a href="#">Información de contacto</a></span>
+                </div>
+            </div>
+            <ul id="info-details">
+                <li><a href="#">
+                    <img src="https://ddhh.unq.edu.ar/wp-content/uploads/2017/04/Logo-UNQ-RGB.png">
+                    <h2>Universidad Nacional de Quilmes</h2>
+                </a></li>
+            </ul>
+        </div>
+        <div id="info-actions">
+            <button type="button" class="btn btn-primary">Tengo interés en</button>
+            <button type="button" class="btn btn-light">Añadir sección</button>
+            <button type="button" class="btn btn-light">Más</button>
+        </div>
+        </div>
+    </div>
+</div>
