@@ -1,57 +1,76 @@
 <div class="container-fluid">
-    <div class="card mat-card">
+  <div class="card mat-card">
+    <div class="row">
+      <div class="col-xxl-11 col-11">
         <div class="card-titles d-flex">
-            <h2 class="card-about me-auto">Acerca de</h2>
-            <div class="btn-edit" onclick="cambiar_parrafo()"><button type= "button" class="btn btn-link"><i class="fa fa-pen"></i></button></div>
+          <h2 class="card-about me-auto">Acerca de</h2>
         </div>
-        <div>
-            <p id="text-about">Estudiante de Licenciatura en Informática, entusiasmado por iniciar una carrera laboral como desarrollador.</p>
+      </div>
+      <div class="col-xxl-1 col-1">
+        <div
+          class="btn-edit d-flex justify-content-end"
+          onclick="cambiar_parrafo()"
+        >
+          <button type="button" class="btn btn-link">
+            <i class="fa fa-pen"></i>
+          </button>
         </div>
-        <div>
-            <input id="edit-about" type="text" oninput="myFunction2(this.value)" style="display:none">
-        </div>
-        <input type="file" id="file1" onchange="showFile(this)">
+      </div>
     </div>
+    <div>
+      <p id="text-about">
+        Estudiante de Licenciatura en Informática, entusiasmado por iniciar una
+        carrera laboral como desarrollador.
+      </p>
+    </div>
+    <div>
+      <input
+        id="edit-about"
+        type="text"
+        oninput="myFunction2(this.value)"
+        style="display: none"
+      />
+    </div>
+    <input type="file" id="file1" onchange="showFile(this)" />
+  </div>
 </div>
 
 <script>
-    function cambiar_parrafo(){
-        document.getElementById("edit-about").style.display="block";
-        let texto = document.getElementById("text-about").innerText;
-        console.log(texto);
-    };
-    function myFunction2(valor) {
-        document.getElementById("text-about").innerText = valor;
-    };
+  function cambiar_parrafo() {
+    document.getElementById("edit-about").style.display = "block";
+    let texto = document.getElementById("text-about").innerText;
+    console.log(texto);
+  }
+  function myFunction2(valor) {
+    document.getElementById("text-about").innerText = valor;
+  }
 
-    function logMessage(message) {
-        console.log(message + "<br>");
+  function logMessage(message) {
+    console.log(message + "<br>");
+  }
+
+  let textarea = document.getElementById("edit-about");
+  textarea.addEventListener("keyup", (e) => {
+    logMessage('Key "${e.key}" released [event: keyup]');
+    if (e.key == "Enter") {
+      document.getElementById("edit-about").style.display = "none";
     }
+  });
 
-    let textarea=document.getElementById("edit-about");
-    textarea.addEventListener('keyup', (e) => {
-        logMessage('Key "${e.key}" released [event: keyup]');
-        if (e.key == "Enter") {
-            document.getElementById("edit-about").style.display="none";
-        }
-    });
+  //carga el contenido de un archivo de texto y lo muestra en el parrafo
+  function showFile(input) {
+    let file = input.files[0];
+    alert("File name: $(file.name)"); //e.g my png
+    alert("Last modified: $(file.lastModified)"); //e.g 155556163
 
-    //carga el contenido de un archivo de texto y lo muestra en el parrafo
-    function showFile(input) {
-        let file = input.files[0];
-        alert('File name: $(file.name)'); //e.g my png
-        alert('Last modified: $(file.lastModified)');//e.g 155556163
-
-        let reader = new FileReader();
-        reader.readAsText(file);
-        reader.onload = function() {
-            console.log(reader.result);
-            document.getElementById("text-about").innerText=reader.result;
-        
-        };
-        reader.onerror = function() {
-            console.log(reader.error);
-        }
-    }
-
+    let reader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = function () {
+      console.log(reader.result);
+      document.getElementById("text-about").innerText = reader.result;
+    };
+    reader.onerror = function () {
+      console.log(reader.error);
+    };
+  }
 </script>
