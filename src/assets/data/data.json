@@ -63,7 +63,7 @@
         "name": "TypeScript",
         "progress": "30"
     }],
-    "proyects": [{
+    "projects": [{
         "name": "Portfolio web",
         "description": "Portafolio web impulsado por el programa Argentina Programa, utilizando tecnologías como HTML, CSS, Bootstrap, Typescript y Angular."
     }]    

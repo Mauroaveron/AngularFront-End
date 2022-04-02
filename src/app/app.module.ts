@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExpeduComponent } from './components/expedu/expedu.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { ProyectsComponent } from './components/proyects/proyects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { PortfolioService } from './common/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ExpeduComponent,
     SkillsComponent,
-    ProyectsComponent
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ExpeduComponent,
     SkillsComponent,
-    ProyectsComponent  
+    ProjectsComponent  
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
